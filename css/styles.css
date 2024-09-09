@@ -1,4 +1,38 @@
+/* style type for unordered list */
+@counter-style custom-unordered {
+  system: cyclic;
+  symbols: "🚗" "🚓" "🚕" "🛺" "🚙" "🚌" "🚐" "🚎" "🚜" "🚛" "🚚" "🚒" "🚑" "🛵"
+    "🛴" "🚲" "🏍" "🏎" "🚂";
+  suffix: " ";
+}
+
+header {
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
 h1 {
   color: red;
   background-color: aqua;
+}
+
+span {
+  background-color: grey;
+  color: white;
+  padding: 2px;
+}
+
+ul {
+  list-style: custom-unordered;
+  /* or list-style-type: custom-unordered; */
 }
